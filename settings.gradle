@@ -11,3 +11,4 @@ rootProject.name = 'learn-spring'
 include('gs-rest-service')
 include('gs-consuming-rest')
 include('gs-uploading-files')
+include('gs-messaging-redis')
