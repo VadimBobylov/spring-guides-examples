@@ -9,6 +9,13 @@ services:
       - "6379:6379"
     volumes:
       - "redis_data:/redis/data"
+  neo4j:
+    image: neo4j
+    ports:
+      - "7474:7474"
+      - "7687:7687"
+    volumes:
+      - "./neo4j/plugins:/plugins"
 volumes:
   redis_data:
     driver: local
